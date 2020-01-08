@@ -9,5 +9,5 @@ c = a
 a = b
 b = c
 
-print("Value of num1 after swapping: ", num1)
-print("Value of num2 after swapping: ", num2)
+print("Value of num1 after swapping: ", a)
+print("Value of num2 after swapping: ", b)
