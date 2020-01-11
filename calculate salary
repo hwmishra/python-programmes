@@ -1,0 +1,22 @@
+# function computes the  salary from basic salary.                                                                                                                                           
+def calcualte_salary(basic_salary):                                       
+    da = 0;     
+                                                                    
+    if (basic_salary <= 10000):                                                   
+                                           
+        da = (basic_salary * 10) / 100;                                         
+    else:                                                       
+      if (basic_salary <= 20000):                                                   
+                                           
+        da = (basic_salary * 20) / 100;                                         
+      else:
+        if (basic_salary >= 20000):                                                   
+                                           
+           da = (basic_salary * 30) / 100;                                     
+    return (basic_salary + da);                                           
+if __name__=="__main__":
+    # Type casting from input string into float value.                                                    
+    basic_salary = float(input("Enter basic salary: "));                        
+    salary = calcualte_salary(basic_salary);                        
+    print("Salary is: %f" % salary);  
+    
