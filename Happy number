@@ -1,0 +1,24 @@
+def numsumsquare(n):
+    squaresum=0
+    while(n):
+        squaresum+=(n%10)*(n%10)
+        n=int(n/10)
+        return(squaresum)
+def happynumber(n):
+    slow=n
+    fast=n
+    while(True):
+        slow=numsumsquare(slow)
+        fast=numsumsquare(numsumsquare(fast))
+        if(slow!=fast):
+            continue
+        else:
+            break
+
+    return(slow==1)
+n=int(input("enter number"))
+if(happynumber(n)):
+    print(n,"is a happy no.")
+
+else:
+    print(n,"is not happy no.")
